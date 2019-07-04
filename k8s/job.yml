@@ -8,7 +8,16 @@ data:
   LOGIN: ""
   PASSWORD: ""
   ZONE_DOMAIN: ""
-  ZONE_HOSTNAME: ""
+  ZONE_HOSTNAME_1: ""
+  ZONE_HOSTNAME_2: ""
+  ZONE_HOSTNAME_3: ""
+  ZONE_HOSTNAME_4: ""
+  ZONE_HOSTNAME_5: ""
+  ZONE_HOSTNAME_6: ""
+  ZONE_HOSTNAME_7: ""
+  ZONE_HOSTNAME_8: ""
+  ZONE_HOSTNAME_9: ""
+  ZONE_HOSTNAME_10: ""
 ---
 apiVersion: batch/v1beta1
 kind: CronJob
