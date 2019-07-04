@@ -2,15 +2,12 @@ FROM alpine:3.9
 
 RUN apk update && \
     apk upgrade && \
-    apk add --no-cache tzdata bash unzip make perl perl-utils \
+    apk add --no-cache bash unzip make perl perl-utils \
                        perl-test-taint perl-netaddr-ip perl-net-ip \
                        perl-yaml perl-log-log4perl \
                        perl-io-socket-ssl
 
 RUN cpan Data::Validate::IP
-
-RUN cp /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime && \
-    echo "America/Sao_Paulo" > /etc/timezone
 
 RUN mkdir /ddclient
 
